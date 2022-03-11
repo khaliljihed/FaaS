@@ -1,514 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Infinite Loop - Bootstrap 4.0 HTML Template</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-<!--
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>FaaS</title>
+  <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+  <!--
 Tooplate 2117 Infinite Loop
 https://www.tooplate.com/view/2117-infinite-loop
 -->
 
-  </head>
-  <body>    
-    <!-- Hero section -->
-    <section id="infinite" class="text-white tm-font-big tm-parallax">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
-        <div class="container">   
-          <div class="tm-next">
-              <a href="#infinite" class="navbar-brand">Infinite Loop</a>
-          </div>             
-            
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars navbar-toggler-icon"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#infinite">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#whatwedo">What We Do</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#testimonials">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#gallery">Gallery</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Contact</a>
-              </li>                    
-            </ul>
-          </div>        
+</head>
+
+<body>
+  <!-- Hero section -->
+  <section id="infinite" class="text-white tm-font-big tm-parallax">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+      <div class="container">
+        <div class="tm-next">
+          <a href="#infinite" class="navbar-brand">FaaS</a>
         </div>
-      </nav>
-      
-      <div class="text-center tm-hero-text-container">
-        <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">Infinite Loop</h2>
-            <p class="tm-hero-subtitle">
-              Bootstrap 4.0 Parallax Theme
-              <br>Free HTML Template by TOOPLATE
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="#infinite">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="#whatwedo">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="#faas">Serverless et FaaS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="#testimonials">Exemple de FaaS </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="#contact">Liens utilisées</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="text-center tm-hero-text-container">
+      <div class="tm-hero-text-container-inner">
+        <h2 class="tm-hero-title">FaaS</h2>
+        <p class="tm-hero-subtitle">
+          Function as a Service
+          <br>Principes et applications
+        </p>
+      </div>
+    </div>
+
+    <div class="tm-next tm-intro-next">
+      <a href="#whatwedo" class="text-center tm-down-arrow-link">
+        <i class="fas fa-2x fa-arrow-down tm-down-arrow"></i>
+      </a>
+    </div>
+  </section>
+
+  <section id="whatwedo" class="tm-section-pad-top">
+
+    <div class="container">
+
+      <div class="row tm-content-box">
+        <!-- first row -->
+        <div class="col-lg-12 col-xl-12">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">Introduction</h2>
+            <p class="mb-4 tm-intro-text">
+              Un prérquis pour comprendre ce qu'est les FaaS, ou le cloud computing en général est de comprendre les
+              architectures web.
+              Un architecte web doit penser à deux aspects important pour concevoir, créer et déployer une application :
+              L'architecture physique et logique.
+              Cette application permet de fournir un service à un client donné. Ainsi, elle doit gérer les intéraction
+              entre client et serveur. L'application est ainsi hébérgée dans un serveur qui lui reçoit les requêtes
+              utilisateurs, les
+              traite et renvoie les résultat.<br />
+              Une application web ne dépend pas de l'installation présente chez les clients. L'avantage est qu'elle
+              devient interopérable et indépendante de l'environnement
+              logiciel et matériel du client.<br />
+
+              Cette architecture permet en effet de de construire un logiciel robuste, stable et fonctionnel avec de
+              bonne
+              performances.
+              Ces performances dépandent du besoin du client final. pour pouvoir assurer ceci, un architect peux avoir
+              recours à plusieurs architectures
+              chacune diffère de l'autre par ses propriétés et offre des avantages différents.<br />
+
+              Le cloud computing correspond à l’accès à des services hébergés en ligne via Internet. Ce fournisseur gère
+              l'accèsà ce service et offre les moyens
+              pour assurerles bonnes performanaces requises sans avoir à se soucier de l'architecture physique de
+              l'application.<br />
+
+              Dans ce site, Je détailles dans un premier temps les différents architecture en insistant sur les
+              architecture cloud précisémment les FaaS.
+              Dans un deuxieme temps, je vais détailler quelques avantages et inconvénient de FaaS. Je vais finir par
+              présenter différents examples de Faas
+              proposés par les leaders du marché.
+              <br />
+              A la fin , j'ai précisé les différent outils de recherche , partage curation d'informations utilisées lor
+              de l'élabortion de la veille.
             </p>
-        </div>        
+          </div>
+        </div>
+
+        <!-- first row -->
+  </section>
+  <section id="faas" class="tm-section-pad-top">
+
+    <div class="row tm-content-box">
+      <!-- second row -->
+      <div class="col-lg-1">
+        <i class="fa fa-3x fa-cloud text-center tm-icon"></i>
+      </div>
+      <div class="col-lg-5">
+        <div class="tm-intro-text-container">
+          <h2 class="tm-text-primary mb-4">Cloud Computing</h2>
+          <p class="mb-4 tm-intro-text">
+            Le cloud computing consiste à fournir des services informatiques - y compris les
+            serveurs, le stockage, les bases de données, le réseau et la communication entre les machines, les
+            logiciels, les services (fonctions, plateformes .0)-
+            par l'intermédiaire d'Internet.
+            Ceci accorde à l'application cloud une innovation plus rapide, des ressources flexibles
+            et des économies d'échelle. <br />
+            Une entreprise a interet de profiter des services du cloud puisqu'elle ne paye que pour les services en
+            nuage qu'elle utilise, ce
+            qui permet de réduire les coûts d'exploitation, de faire fonctionner les infrastructures plus
+            efficacement et de l'adapter à l'évolution des besoins sans avoir à tout gérer. Toute la partie physique de
+            l'architecture web est gérée par ce fournisseur cloud
+          </p>
+        </div>
       </div>
 
-      <div class="tm-next tm-intro-next">
-        <a href="#whatwedo" class="text-center tm-down-arrow-link">
-          <i class="fas fa-2x fa-arrow-down tm-down-arrow"></i>
-        </a>
-      </div>      
-    </section>
-
-    <section id="whatwedo" class="tm-section-pad-top">
-      
-      <div class="container">
-
-            <div class="row tm-content-box"><!-- first row -->
-                <div class="col-lg-12 col-xl-12">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4 tm-section-title">What We Do</h2>
-                        <p class="mb-4 tm-intro-text">
-                          This is Infinite Loop, free Bootstrap 4.0 HTML template with a parallax effect. This layout is what you can modify and use for your websites. Please spread a word to your friends about our website. Thank you for supporting us. If you have any question, you can contact us or chat with us on our <a href="https://fb.com/tooplate">Tooplate Facebook page</a>.</p>
-                    </div>
-                </div>
-
-            </div><!-- first row -->
-            
-            <div class="row tm-content-box"><!-- second row -->
-        		<div class="col-lg-1">
-                    <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Market Analysis</h2>
-                        <p class="mb-4 tm-intro-text">
-                          Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis nibh semper. Pellentesque est urna.</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-1">
-                    <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Fast Support</h2>
-                        <p class="mb-4 tm-intro-text">
-                          Credit goes to <a rel="nofollow" href="https://www.pexels.com">Pexels</a> website for all images used in this template. Cras condimentum mi et sapien dignissim luctus.</p>
-                    </div>
-                </div>
-
-            </div><!-- second row -->
-            
-            <div class="row tm-content-box"><!-- third row -->
-        		<div class="col-lg-1">
-                    <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Top Security</h2>
-                        <p class="mb-4 tm-intro-text">
-                      You have <strong>no</strong> authority to post this template as a ZIP file on your template collection websites. You can <strong>use</strong> this template for your commercial websites.</p>
-                          
-                          <div class="tm-continue">
-                            <a href="#testimonials" class="tm-intro-text tm-btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-1">
-                    <i class="fas fa-3x fa-users text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                      <h2 class="tm-text-primary mb-4">Social Work</h2>
-                        <p class="mb-4 tm-intro-text">
-                      You can change <a href="https://fontawesome.com/icons?d=gallery">Font Awesome icons</a> by either <b><em>fas or far</em></b> in the HTML codes. For Examples:<br>
-                      <em>&lt;i class=&quot;fas fa-users&quot;&gt;&lt;i class=&quot;far fa-chart-bar&quot;&gt;</em> </p>
-                          
-                          <div class="tm-continue">
-                            <a href="#testimonials" class="tm-intro-text tm-btn-primary">Details</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div><!-- third row -->
-
+      <div class="col-lg-1">
+        <i class="fa fa-3x fa-globe text-center tm-icon"></i>
+      </div>
+      <div class="col-lg-5">
+        <div class="tm-intro-text-container">
+          <h2 class="tm-text-primary mb-4">FaaS : Function as a Service</h2>
+          <p class="mb-4 tm-intro-text">
+            Le FaaS (Function-as-a-Service) est l'un des services du cloud computing. Ce service permet aux développeurs
+            d'application web
+            de créer, d'exécuter et de gérer des applications en tant que fonctions, sans avoir à se préoccuper de la
+            maintenance de l'infrastructure logicielle et matérielle nécéssaire.
+            <br />
+            Les FaaS s'exécutent suite à un événement dans des conteneurs "stateless" c'est à dire sans état. Un FaaS
+            n'a pas de mémoire.. Les
+            FaaS gèrent les états et la logique derrière par les fournissseur cloud. Ce fournisseur doit adapter les
+            ressources aux besoins. Le client ne se soucie pas de cette mise à l'échelle.
+            C'est le role du fournisseur de le faire.
+            <br />
+            Les solutions FaaS sont proposées sur internet et s'intègrent facilement à une application donnéeLes
+            développeurs sont le plus souvent coincés dans les serveurs et dépendent d'eux pour le
+            développement et la rapidité des applications. Avec FaaS, on peut se passer partiellement de la
+            partie DevOps
+          </p>
         </div>
-      
-    </section>
-    
-    <section id="testimonials" class="tm-section-pad-top tm-parallax-2">      
-      <div class="container tm-testimonials-content">
-        <div class="row">
-          <div class="col-lg-12 tm-content-box">
-            <h2 class="text-white text-center mb-4 tm-section-title">Testimonials</h2>
-            <p class="mx-auto tm-section-desc text-center">
-                Nulla dictum sem non eros euismod, eu placerat tortor lobortis. Suspendisse id velit eu libero pellentesque interdum. Etiam quis congue eros.
-              </p>
-            <div class="mx-auto tm-gallery-container tm-gallery-container-2">
-              <div class="tm-testimonials-carousel">
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-01.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>This background image includes a semi-transparent overlay layer. This section also has a parallax image effect.</blockquote>
-                  <figcaption>Catherine Win (Designer)</figcaption>
-                </figure>
+      </div>
 
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-02.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Testimonial section comes with carousel items. You can use Infinite Loop HTML CSS template for your websites.</blockquote>
-                  <figcaption>Dual Rocker (CEO)</figcaption>
-                </figure>
+    </div><!-- second row -->
+    <!-- ************************************************************** -->
+    <div class="row">
 
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-03.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Nulla finibus ligula nec tortor convallis tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus.</blockquote>
-                  <figcaption>Sandar Soft (Marketing)</figcaption>
-                </figure>
+      <!-- first row -->
+      <div class="col-md-12 col-md-offset-1" style="margin-left: 5%;">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active" style="background-color: rgb(167, 209, 243); font-size: x-large;">
+            <a href="#tab01" aria-controls="tab01" role="tab" data-toggle="tab">
+              &nbsp; | Les architecture web moderne | &nbsp;
+            </a>
+          </li>
 
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-04.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Curabitur rutrum pharetra lobortis. Pellentesque vehicula, velit quis eleifend fermentum, erat arcu aliquet neque.</blockquote>
-                  <figcaption>Oliva Htoo (Designer)</figcaption>
-                </figure>
+          <li style="background-color: rgb(167, 209, 243); font-size: x-large;">
+            <a href="#tab02" aria-controls="tab02" role="tab" data-toggle="tab">
+              &nbsp; | Zoom sur les architectures micro-services | &nbsp;
+            </a>
+          </li>
 
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-02.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Integer sit amet risus et erat imperdiet finibus. Nam lacus nunc, vulputate id ex eget, euismod auctor augue.</blockquote>
-                  <figcaption>Jacob Joker (CTO)</figcaption>
-                </figure>
+          <li style="background-color: rgb(167, 209, 243); font-size: x-large;">
+            <a href="#tab03" aria-controls="tab03" role="tab" data-toggle="tab">
+              &nbsp; | Exemples de transition vers les micorservices| &nbsp;
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="tab-content" style="margin : 20px">
+        <div class="tab-pane active" id="tab01" role="tabpanel">
+          <div class="row" style="margin : 20px">
+            <div class="col-md-6">
+              <div class="tab-pane-item">
+                <h2 class="tm-text-primary mb-4">Architecture web : 3 tiers, orienté services </h2>
+                <p> Les architectures web les plus utilisés aujourd'hui :</p>
+                <p>&bull; <strong>Arcitecture 3 tiers</strong>
+                  Cette architecture permet de déployer le code en tenant en compte ses spécificités et la proximité du
+                  client final.
+                  C’est une architecture basée sur une logique client-serveur. Comme le montre la figure,
+                  l’architecture 3-tiers se forme de 3 niveaux :
+                  — Présentation : C’est l’interface graphique qui affiche les données du client et
+                  traite les données afin de les envoyé à la partie métier. Dans notre cas il s’agit du
+                  navigateur client.
+                  Dans notre cas, C’est le navigateur web (Explorer, Opera, Chrome..) qui reçoit et
+                  affiche les réponses (Pages HTML) et envois des requêtes HTTP.
+                  — Le serveur application ou le DataAccess : Cette parte traite les requêtes de la
+                  couche présentation et assure la logique métier de l’application. C’est cette partie
+                  qui traite les données venant de la base des données en vue d’être affiché chez le
+                  client aussi.
+                  Dans notre cas, il s’agit du code serveur qui lui génère du html et l’envoie
+                  au navigateur
+
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6" style="padding-top: 5%;">
+              <div style="margin-top: 2%;">
+                <img src="img/3tiers.png" class="img-responsive" alt="Thin Laptop">
+                <p style="text-align: center;">Architecture 3-tiers</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6" style="padding-top: 5%;">
+                <div style="margin-top: 0%;">
+                  <img src="img/micro.png" class="img-responsive" alt="Thin Laptop">
+                  <p style="text-align: center;">Architecture Micro services</p>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-top: 3%;">
+                <div class="tab-pane-item">
+                  <h2 class="tm-text-primary mb-4">Les micro-services dans les applications web </h2>
+                  <p>Les micro-services permettent de répondre aux problèmes des
+                    systèmes informatiques vastes et complexes nécessitant beacoup de ressources ou une multitude
+                    d'outils.
+                    Cette architecture repose sur plusieurs microservice,chacun contibue à l'ensemble des
+                    fonctionnalités pour fournir finalement un service
+                    complet à l'utilisateur Dans le cas des applications web pour l'e-commerce, on peut citer des
+                    services comme la
+                    recherche de
+                    produits, le paiement ou l'expédition. Ces derniers communiquent entre eux via des API (Application
+                    programming interface).
+                  </p>
+                  <p>Le nombre d'entreprises se tournant vers l'architecture
+                    de micro-services augmente
+                    rapidement. </p>
+
+
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="tm-bg-overlay"></div>
-    </section>
-    
-    <section id="gallery" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="row">
-          <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Gallery</h2>
-              <p class="mx-auto tm-section-desc">
-                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis nibh semper. Pellentesque est urna, lobortis eu arcu a, aliquet tristique urna.
+
+
+        <div class="tab-pane" id="tab02" role="tabpanel">
+          <div class="col-md-6">
+            <div class="tab-pane-item">
+              <h2 class="tm-text-primary mb-4">Fonctionnement des FaaS </h2>
+              <p>En utilisant les FaaS, les dévellopeurs se contentent d'implémenter la loique métier sans se soucier du
+                conteneur
+                logiciel ou matériel.
+
+                Cette fonction est accéssible et hébergé en ligne dans le cloud.
+
+                L'équipe de dévellopement délègue l'intéralité de la partie gestion des ressources nécéssaires au
+                fournisseurs de services cloud.
+                Une fonction est un bout de logiciel qui permet d'exécuter une logique métier sur un système
+                d'exploitation. Les applications peuvent être composées de nombreuses fonctions.</p>
+              <p>
+                Le FaaS permet aussi une abstraction à la partie serveur et stockage.
+
+                L'infrastructure FaaS est dimensionnée suite à la demande par le fournisseur. Ceci se fait par le
+                système d'évènements.
+                Son atout c'est son adaptabilité et sa rapidité pour se mettre à l'échelle.
+
+                Dans la réalité, une application est très souvent le mélange de plusieurs types de services :
+                FaaS, SaaS, services hébérgés sur ses propres serveurs..
               </p>
-          </div>            
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="mx-auto tm-gallery-container">
-                    <div class="grid tm-gallery">
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image 1" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Physical Health <span>Exercise!</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image 2" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Rain on Glass <span>Second Image</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-03.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-03.jpg" alt="Image 3" class="img-fluid">
-                          <figcaption>
-                            <h2><i><span>Sea View</span> Mega City</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-04.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-04.jpg" alt="Image 4" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Dream Girl <span>Thoughts</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-05.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-05.jpg" alt="Image 5" class="img-fluid">
-                          <figcaption>
-                            <h2><i><span>Workstation</span> Offices</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-06.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-06.jpg" alt="Image 6" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Just Above <span>The City</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image 7" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Another <span>Exercise Time</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image 8" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Repeated <span>Image Spot</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-                </div>                
-            </div>        
+
+
+              <h2 class="tm-text-primary mb-4">Les avantages des FaaS </h2>
+              <p>Amélioration de la productivité des développeurs et accélération du développement : <br />
+                La partie Devops n'est plus aussi imposante qu'avant. Les iformaticiens ne concentrent que sur la partie
+                devellopement des composantes métiers.<br />
+                <br />
+                Consommation et paiement des ressources nécessaires uniquement selon les besoins: <br />
+                La facturation se fait selon le nombre de fois que la fonction est sollicitée.
+
+                <br />
+                Gestion du serveur déléguée: <br />
+                La gestion des ressources est gérée par le fournisseur clous. Ceci permet de réduire l'effectif et de
+                réduire la phase de maintenance.
+                <br />
+                Mise à l'échelle simplifiée et mise à l'échelle horizontale gérée par la plateforme : <br />
+                Le nombre de serveurs nécéssaire pour servir l'application est géré par le fournisseur cloud.
+              </p>
+              <p>
+                Possibilité de rédiger les fonctions dans quasiment tous les langages de programmation<br />
+
+
+
+              </p>
+              <h2 class="tm-text-primary mb-4">
+                Les limites des FaaS
+              </h2>
+              <p>
+                En général, la première limite des FaaS est la complexité que présente tout système distribué. Gérer les
+                ressources peut se révéler difficile surtout quand on a plusieurs FaaS dans une même applicaion <br>
+                La dépendance du fournisseur : changement difficile des FaaS, Le client est ainsi entièrement dépendant
+                du fournisseur,
+                Si le fournisseur a des problèmes, la Faas devient non fonctionnelle3
+
+                <br>
+                Difficultés potentielles lors de la création d'un environnement de test pour votre application: Ceci est
+                principalement du aux droits d'accès à une fonction hébéergé sur un serveur dont on ne sais pas ses
+                propriétes
+                <br>Pas de visibilité sur le respect des réglementations régissant l’utilisation ou le stockage de
+                données
+                Ceci pose un problème car souvent la FaaS est une boite noire.
+              </p>
+              <p><strong>Pour clôturer cette partie à propos le micro-services </strong>, je mis <a
+                  href="https://microservices.io/patterns/microservices.html"> ce lien </a> d'un exemple concret
+                de
+                l'implémentation d'une architecture
+                micro-services publié par m. Chris Richardson, Architecte logiciel et l'auteur de Microservices
+                patterns.</p>
+            </div>
           </div>
+          <div class="col-md-6">
+            <div class="feature-image">
+              <img src="img/tma.jpg" class="img-responsive" alt="Thin Laptop">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab03" role="tabpanel" style="margin : 20px">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="tab-pane-item">
+                <h2 class="tm-text-primary mb-4">Des exemples d'utilisation des FaaS</h2>
+                <p>Il y a plusieurs exemples d'utilisation des FaaS : </p>
+                <p>&bull; <strong>Mise à jour et amélioration :</strong>
+
+                  Pour garantir la mise en place d'une infrastructure informatique solide et moderne, il faut la
+                  refactorer avec des microservices qui permettent de déployer des technologies de développement
+                  full-stack.
+                  Les FaaS permettent la modernisation des applications en offrant une multitude de possibilités de
+                  migratio et de mise à jour
+
+                </p>
+                <p>&bull; <strong>Mise à jour et amélioration :</strong>
+
+                  Pour garantir la mise en place d'une infrastructure informatique solide et moderne, il faut la
+                  refactorer avec des microservices qui permettent de déployer des technologies de développement
+                  full-stack.
+                  Les FaaS permettent la modernisation des applications en offrant une multitude de possibilités de
+                  migratio et de mise à jour
+
+                </p>
+
+                <p>&bull; <strong>Big Data :</strong>
+                <p>
+                  Pour les applications traitant des données volumineuses, AL/ML est l'un des meilleurs cas
+                  d'utilisation de l'architecture microservices. Les applications Big Data nécessitent une architecture
+                  complexe orientée pipeline de données, où chaque étape est gérée par une (ou quelques) tâche(s)
+                  particulière(s), par exemple la collecte, le traitement, la livraison, le stockage des données, etc.
+                  De telles unités "faiblement couplées" sont parfaitement adaptées aux FaaS.
+
+                </p>
+                <p>
+                  Des applications en croissance rapide fournissant des services tiers (comme des plugins, des
+                  applications de transfert de données, des outils d'analyse et de surveillance, des index de données,
+                  etc.) En raison de leur masse et de leur logique complexe, ces applications ont besoin de plus de
+                  ressources (RAM, CPU et services) pour fonctionner. Cependant, ces applications ont également besoin
+                  d'une stabilité accrue et d'un temps de fonctionnement de presque 100 % pour ne pas perdre les clients
+                  qu'elles servent.
+
+                </p>
+                <p>
+
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div style="margin-top: 4%;">
+                <img src="img/tma.jpg" alt="Thin Laptop">
+                <p style="text-align: center;">Maintenance applicative</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div style="margin-top: 0%;">
+                                <p style="text-align: center;"></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tab-pane-item">
+                <p>&bull; <strong> Systèmes à grande échelle avec une logique complexe :</strong> Les
+                  organisations qui connaissent une croissance spectaculaire (par exemple, les médias sociaux, les
+                  réseaux sociaux, les médias) ont besoin d'une flexibilité et d'une évolutivité exceptionnelles, que
+                  l'architecture de microservices fournit précisément. Elle aide les entreprises à trouver rapidement
+                  les goulets d'étranglement ou à faire appel à de nouvelles technologies de pointe pour y parvenir. De
+                  plus, la possibilité de déployer fréquemment au niveau des services permet une évolutivité encore plus
+                  rapide..</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div style="margin-top: 0%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
       </div>
-    </section>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- ************************************************************ -->
 
-    <!-- Contact -->
-    <section id="contact" class="tm-section-pad-top tm-parallax-2">
-    
-      <div class="container tm-container-contact">
-        
-        <div class="row">
-            
-            <div class="text-center col-12">
-                <h2 class="tm-section-title mb-4">Contact Us</h2>
-                <p class="mb-5">
-                  Proin enim orci, tincidunt quis suscipit in, placerat nec est. Vestibulum posuere faucibus posuere. Quisque aliquam velit eget leo blandit egestas. Nulla id posuere felis, quis tristique nulla.
-                </p><br>
-            </div>
-            
-            <div class="col-sm-12 col-md-6">
-              <form action="" method="get">
-                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
-                <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
-                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
-                <button type="submit" class="btn tm-btn-submit">Submit</button>
-              </form>
-            </div>
-            
-            <div class="col-sm-12 col-md-6">
+    </div><!-- third row -->
 
-                <div class="contact-item">
-                  <a rel="nofollow" href="https://www.tooplate.com/contact" class="item-link">
-                      <i class="far fa-2x fa-comment mr-4"></i>
-                      <span class="mb-0">Chat Online</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="mailto:mail@company.com" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-4"></i>
-                      <span class="mb-0">mail@company.com</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="https://www.google.com/maps" class="item-link">
-                      <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
-                      <span class="mb-0">Our Location</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="tel:0100200340" class="item-link">
-                      <i class="fas fa-2x fa-phone-square mr-4"></i>
-                      <span class="mb-0">255-662-5566</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">&nbsp;</div>
-            
+    </div>
+
+  </section>
+
+  <section id="testimonials" class="tm-section-pad-top tm-parallax-2">
+    <div class="container tm-testimonials-content">
+      <div class="row">
+        <div class="col-lg-12 tm-content-box">
+          <h2 class="text-white text-center mb-4 tm-section-title">Testimonials</h2>
+          <p class="mx-auto tm-section-desc text-center">
+            La liste suivante présente quelques example de FaaS
+          </p>
+          <div class="mx-auto tm-gallery-container tm-gallery-container-2">
+            <div class="tm-testimonials-carousel">
+              <figure class="tm-testimonial-item">
+                <img src="img/testimonial-img-02.jpg" alt="Image" class="img-fluid mx-auto">
+                <blockquote>            AWS Lambda est un service de calcul proposé par Amazon qui permet d'exécuter du code pour  tout type d'application  et de backend
+                </blockquote>
+                <figcaption>Catherine Win (Designer)</figcaption>
+              </figure>
+
+              <figure class="tm-testimonial-item">
+                <img src="img/testimonial-img-03.jpg" alt="Image" class="img-fluid mx-auto">
+                <blockquote>Plateforme Faas (Functions-as-a-Service) basée sur Apache OpenWhisk.</blockquote>
+                <figcaption>Dual Rocker (CEO)</figcaption>
+              </figure>
+
+              <figure class="tm-testimonial-item">
+                <img src="img/testimonial-img-04.jpg" alt="Image" class="img-fluid mx-auto">
+                <blockquote>Google Cloud Functions est un environnement d'exécution sans serveur servant à créer et connecter des services cloud.</blockquote>
+                <figcaption>Sandar Soft (Marketing)</figcaption>
+              </figure>
+
+              <figure class="tm-testimonial-item">
+                <img src="img/testimonial-img-01.jpg" alt="Image" class="img-fluid mx-auto">
+                <blockquote>Azure Functions est une solution "sans serveur" permettant d'exécuter de petites applications dans le nuage. 
+                </blockquote>
+                <figcaption>Oliva Htoo (Designer)</figcaption>
+              </figure>
             </div>
-            
-            
-        </div><!-- row ending -->
-        
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="tm-bg-overlay"></div>
+  </section>
+  <!-- Contact -->
+  <section id="contact" class="tm-section-pad-top tm-parallax-2">
 
-      	<footer class="text-center small tm-footer">
-          <p class="mb-0">
-          Copyright &copy; 2020 Company Name 
-          
-          . <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates">Designed by TOOPLATE</a></p>
-        </footer>
+    <div class="container tm-container-contact">
 
-    </section>
-    
-    <script src="js/jquery-1.9.1.min.js"></script>     
-    <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/easing.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
-    <script>
+      <div class="row">
 
-      function getOffSet(){
-        var _offset = 450;
-        var windowHeight = window.innerHeight;
+        <div class="text-center col-12">
+          <h2 class="tm-section-title mb-4">Les liens de la veille</h2>
+          Twitter  :  <a href="https://twitter.com/joejihed"> ici </a>
+          Diigo : <a href="https://www.diigo.com/user/jkhalil"> ici </a>
+        </div>
 
-        if(windowHeight > 500) {
-          _offset = 400;
-        } 
-        if(windowHeight > 680) {
-          _offset = 300
-        }
-        if(windowHeight > 830) {
-          _offset = 210;
-        }
 
-        return _offset;
+      </div><!-- row ending -->
+
+    </div>
+
+    <footer class="text-center small tm-footer">
+      <p class="mb-0">
+        Copyright &copy; 2020 Company Name
+
+        . <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates">Designed by TOOPLATE</a></p>
+    </footer>
+
+  </section>
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/easing.min.js"></script>
+  <script src="js/jquery.singlePageNav.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+
+    function getOffSet() {
+      var _offset = 450;
+      var windowHeight = window.innerHeight;
+
+      if (windowHeight > 500) {
+        _offset = 400;
+      }
+      if (windowHeight > 680) {
+        _offset = 300
+      }
+      if (windowHeight > 830) {
+        _offset = 210;
       }
 
-      function setParallaxPosition($doc, multiplier, $object){
-        var offset = getOffSet();
-        var from_top = $doc.scrollTop(),
-          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
-        $object.css({"background-position" : bg_css });
-      }
+      return _offset;
+    }
 
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
-      var background_image_parallax = function($object, multiplier, forceSet){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
+    function setParallaxPosition($doc, multiplier, $object) {
+      var offset = getOffSet();
+      var from_top = $doc.scrollTop(),
+        bg_css = 'center ' + (multiplier * from_top - offset) + 'px';
+      $object.css({ "background-position": bg_css });
+    }
 
-        if(forceSet) {
+    // Parallax function
+    // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+    var background_image_parallax = function ($object, multiplier, forceSet) {
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+      multiplier = 1 - multiplier;
+      var $doc = $(document);
+      // $object.css({"background-attatchment" : "fixed"});
+
+      if (forceSet) {
+        setParallaxPosition($doc, multiplier, $object);
+      } else {
+        $(window).scroll(function () {
           setParallaxPosition($doc, multiplier, $object);
+        });
+      }
+    };
+
+    var background_image_parallax_2 = function ($object, multiplier) {
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+      multiplier = 1 - multiplier;
+      var $doc = $(document);
+      $object.css({ "background-attachment": "fixed" });
+
+      $(window).scroll(function () {
+        if ($(window).width() > 768) {
+          var firstTop = $object.offset().top,
+            pos = $(window).scrollTop(),
+            yPos = Math.round((multiplier * (firstTop - pos)) - 186);
+
+          var bg_css = 'center ' + yPos + 'px';
+
+          $object.css({ "background-position": bg_css });
         } else {
-          $(window).scroll(function(){          
-            setParallaxPosition($doc, multiplier, $object);
-          });
+          $object.css({ "background-position": "center" });
         }
-      };
+      });
+    };
 
-      var background_image_parallax_2 = function($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({"background-attachment" : "fixed"});
-        
-        $(window).scroll(function(){
-          if($(window).width() > 768) {
-            var firstTop = $object.offset().top,
-                pos = $(window).scrollTop(),
-                yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
+    $(function () {
+      // Hero Section - Background Parallax
+      background_image_parallax($(".tm-parallax"), 0.30, false);
+      background_image_parallax_2($("#contact"), 0.80);
+      background_image_parallax_2($("#testimonials"), 0.80);
 
-            var bg_css = 'center ' + yPos + 'px';
+      // Handle window resize
+      window.addEventListener('resize', function () {
+        background_image_parallax($(".tm-parallax"), 0.30, true);
+      }, true);
 
-            $object.css({"background-position" : bg_css });
-          } else {
-            $object.css({"background-position" : "center" });
-          }
-        });
-      };
-      
-      $(function(){
-        // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax"), 0.30, false);
-        background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#testimonials"), 0.80);   
-        
-        // Handle window resize
-        window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
-        }, true);
+      // Detect window scroll and update navbar
+      $(window).scroll(function (e) {
+        if ($(document).scrollTop() > 120) {
+          $('.tm-navbar').addClass("scroll");
+        } else {
+          $('.tm-navbar').removeClass("scroll");
+        }
+      });
 
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){          
-          if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
-          } else {
-            $('.tm-navbar').removeClass("scroll");
-          }
-        });
-        
-        // Close mobile menu after click 
-        $('#tmNav a').on('click', function(){
-          $('.navbar-collapse').removeClass('show'); 
-        })
+      // Close mobile menu after click 
+      $('#tmNav a').on('click', function () {
+        $('.navbar-collapse').removeClass('show');
+      })
 
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav({
-          'easing': 'easeInOutExpo',
-          'speed': 600
-        });        
-        
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
+      // Scroll to corresponding section with animation
+      $('#tmNav').singlePageNav({
+        'easing': 'easeInOutExpo',
+        'speed': 600
+      });
 
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 600, 'easeInOutExpo', function(){
-              window.location.hash = hash;
-            });
-          } // End if
-        });
+      // Add smooth scrolling to all links
+      // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+      $("a").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
 
-        // Pop up
-        $('.tm-gallery').magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          gallery: { enabled: true }
-        });
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 600, 'easeInOutExpo', function () {
+            window.location.hash = hash;
+          });
+        } // End if
+      });
 
-        $('.tm-testimonials-carousel').slick({
-          dots: true,
-          prevArrow: false,
-          nextArrow: false,
-          infinite: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2
-              }
-            }, 
-            {
-              breakpoint: 480,
-              settings: {
-                  slidesToShow: 1
-              }                 
+      // Pop up
+      $('.tm-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: { enabled: true }
+      });
+
+      $('.tm-testimonials-carousel').slick({
+        dots: true,
+        prevArrow: false,
+        nextArrow: false,
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2
             }
-          ]
-        });
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
 
-        // Gallery
-        $('.tm-gallery').slick({
-          dots: true,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          responsive: [
+      // Gallery
+      $('.tm-gallery').slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        responsive: [
           {
             breakpoint: 1199,
             settings: {
@@ -538,8 +700,9 @@ https://www.tooplate.com/view/2117-infinite-loop
             }
           }
         ]
-        });
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
